@@ -1,0 +1,142 @@
+/* styles.css inicio */
+
+/* Definición de fuentes */
+@font-face {
+  font-family: 'MiFuente';
+  src: url('../src/assets/cocomat\ light-trial.ttf') format('truetype');
+  /* Puedes agregar más formatos de fuente aquí para mayor compatibilidad */
+}
+
+
+body {
+
+  background-color: #0b0c11;
+  font-family: "MiFuente";
+  margin: 0;
+  padding: 0;
+  background: url("../src/assets/concreto1.jpg");
+
+}
+.container-header{
+  
+    background-color:black;
+    background-image: url("../src/assets/desgastado.jpeg");
+    background-repeat: no-repeat;
+    height:5em;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+ 
+}
+
+/* Navbar.css */
+
+.nav-bar {
+  display: flex;
+  background-color: #333;
+  color: white;
+  justify-content: space-evenly;
+  font-family: "MiFuente";
+  height: 2em;
+ 
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+ 
+
+}
+
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0.5em;
+  
+
+}
+
+a:hover {
+  font-weight: bold;
+  color: #fff;
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 30px #ffee00,
+    0 0 40px #ffee00,
+    0 0 50px #ffee00;
+}
+
+video{
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.logol-oficial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Saira Stencil One', cursive;
+  color: #dca21c;
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 30px #ffee00,
+    0 0 40px #ffee00,
+    0 0 50px #ffee00;
+    
+  
+}
+.marca{
+
+  margin: 0%;
+  text-align: center;
+ 
+}
+
+@media (max-width: 768px) {
+  body ,
+  .container{
+    background: url("../src/assets/concreto1.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  .logol{
+    font-size: 60%;
+  }
+
+  
+  li a{
+    font-size:70%;
+    display: flex;
+    color: #0b0c11;
+    margin-top: 15px;
+
+  }
+  
+  .nav-bar {
+
+    background-color: yellow;
+    color: white;
+   font-size: 80%;
+    height: 40%;
+    cursor: pointer;
+  
+    
+   
+  }
+  
+  
+}

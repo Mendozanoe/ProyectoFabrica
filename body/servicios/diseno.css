@@ -1,0 +1,169 @@
+.design-art {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    color: aliceblue;
+    margin-top: 7em;
+    width: 70%;
+    height: auto;
+    background-color: black;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+design-art {
+    border-radius: 100%;
+}
+
+.content-one {
+    display: flex;
+    align-content: center;
+
+    justify-content: center;
+
+}
+
+p {
+    font-size: 15px;
+}
+
+.content-two {
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye los elementos con espacios iguales */
+
+    margin: 2em;
+
+}
+
+.button {
+    background-color: yellow;
+    width: 60%;
+    height: 3em;
+    color: black;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.about {
+
+    background-color: beige ;
+    margin-top: 7em;
+    width: max-content;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(to right, #e1f80d, #ffc800, transparent, transparent, #ffc800,#ffc800);
+  background-size: 200% 100%;
+  animation: neon-line 15s linear infinite;
+
+}
+@keyframes neon-line {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+.fa-users,
+.fa-puzzle-piece,
+.fa-eye,
+.fa-heart {
+    font-size: 24px;
+    color: #c7ac06;
+}
+
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 2em;
+}
+
+div .container-about {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.container-tree {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.circle-tree {
+    border-radius: 10%;
+    background-color:rgba(255, 255, 255, 0.5);;
+    width: 50vh;
+    height: 50vh;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 2em;
+    margin: 3em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .content-two {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        margin: 1px;
+    }
+
+    .design-art {
+        width: 70%;
+    }
+
+    .container-tree {
+
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       align-content: center;
+
+    }
+
+   .about,
+   .circle-tree{
+    width: 40vh;
+    height: 40vh;
+   }
+  
+
+
+}
+
+button:hover {
+    animation: shadow-drop-center 0.4s linear both
+}
+
+@keyframes shadow-drop-center {
+    0% {
+        box-shadow: 0 0 0 0 transparent
+    }
+
+    100% {
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .55)
+    }
+}

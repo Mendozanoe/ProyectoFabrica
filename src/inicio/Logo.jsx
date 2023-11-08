@@ -1,5 +1,5 @@
 import React from 'react';
-import vdeo from "../src/assets/logoVideo.mp4";
+import vdeo from "../assets/logoVideo.mp4";
 
 const Logo = () => {
   return (

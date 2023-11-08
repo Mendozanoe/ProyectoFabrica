@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "../form/formContact.css";
+import "./formContact.css";
 
 export const FormContact = () => {
 

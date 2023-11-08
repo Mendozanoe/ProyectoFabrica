@@ -1,8 +1,8 @@
 import React from 'react'
-import Diseno from './servicios/Diseno'
-import Educacion from './servicios/Educacion'
-import Impresion from './servicios/Impresion'
-import "./servicios/diseno.css"
+import Diseno from '../servicios/Diseno'
+import Educacion from '../servicios/Educacion'
+import Impresion from '../servicios/Impresion'
+import "../servicios/diseno.css"
 
 const Service = () => {
     return (

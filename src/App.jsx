@@ -5,6 +5,7 @@ import Service from './body/Service'
 import { FormContact } from './form/FormContact'
 import Home from './body/Home'
 import About from "./body/About"
+import Footer from './footer/Footer'
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
       <Route path="/servicios" element={<Service />} />
       <Route path="/contacto" element={<FormContact />} />
     </Routes>
+      <About/>
+      <Service/>
+  
+    <Footer/>
     </BrowserRouter>
   )
 }

@@ -12,6 +12,7 @@ import "../servicios/home.css"
 import img1 from "../assets/ideas.jpg"
 import img2 from "../assets/impresora1.jpg"
 import img3 from "../assets/learning.jpg"
+import About from './About';
 
 const items = [
   {
@@ -94,9 +95,15 @@ class Home extends Component {
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
         <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
       </Carousel>
+      
     );
+   
+    
   }
+  
+  
 }
+
 
 
 export default Home;
